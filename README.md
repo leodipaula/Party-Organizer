@@ -1,2 +1,2 @@
 # Party-Organizer
-A accessible and intuitive multi party's organizer 
+A accessible and intuitive multi party's organizer in WhatsApp
