@@ -24,6 +24,9 @@ public class Gift {
     private String name;
 
     @Nonnull
+    private Double price;
+
+    @Nonnull
     @ManyToOne
     @JoinColumn(name = "participant_id", nullable = false)
     private Participant participant;

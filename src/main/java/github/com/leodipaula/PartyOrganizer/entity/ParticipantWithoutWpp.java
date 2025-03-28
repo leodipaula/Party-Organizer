@@ -33,6 +33,9 @@ public class ParticipantWithoutWpp {
     @Column(nullable = true, columnDefinition = "boolean default false")
     private boolean confirmed;
 
+    @Column(nullable = true, columnDefinition = "boolean default false")
+    private boolean sorted;
+
     @Nullable
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "participantWithoutWpp", fetch = FetchType.LAZY)
     private List<Food> foods;

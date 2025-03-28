@@ -40,6 +40,12 @@ public class Participant {
     @Column(nullable = false, columnDefinition = "boolean default false")
     private boolean owner;
 
+    @Column(nullable = true, columnDefinition = "boolean default false")
+    private boolean sorted;
+
+    @Column(nullable = true, columnDefinition = "string default null")
+    private String nameOfSortedParticipant;
+
     @Nonnull
     @ManyToOne
     @JoinColumn(name = "user_id", nullable = false)
