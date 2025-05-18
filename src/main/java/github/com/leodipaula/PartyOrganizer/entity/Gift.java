@@ -1,38 +1,26 @@
 package github.com.leodipaula.PartyOrganizer.entity;
 
-import jakarta.annotation.Nonnull;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.relational.core.mapping.Column;
+import org.springframework.data.relational.core.mapping.Table;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Entity
+@Table("tb_gifts")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 public class Gift {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private Long id;
 
-    @Nonnull
     private String name;
-
-    @Nonnull
     private Double price;
 
-    @Nonnull
-    @ManyToOne
-    @JoinColumn(name = "participant_id", nullable = false)
-    private Participant participant;
+    @Column("participant_id")
+    private Long participantId;
 
-    @Nonnull
-    @ManyToOne
-    @JoinColumn(name = "participantWithoutWpp_id", nullable = false)
-    private ParticipantWithoutWpp participantWithoutWpp;
+    @Column("participant_without_wpp_id")
+    private Long participantWithoutWppId;
 }

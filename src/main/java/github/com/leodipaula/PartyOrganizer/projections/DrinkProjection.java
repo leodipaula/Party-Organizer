@@ -1,4 +1,4 @@
-package github.com.leodipaula.PartyOrganizer.repository.partyOrganizer.projections;
+package github.com.leodipaula.PartyOrganizer.projections;
 
 public interface DrinkProjection {
     String getName();

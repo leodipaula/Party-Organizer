@@ -1,4 +1,4 @@
-package github.com.leodipaula.PartyOrganizer.repository.secretSanta.projections;
+package github.com.leodipaula.PartyOrganizer.projections;
 
 public interface GiftProjection {
     String getName();

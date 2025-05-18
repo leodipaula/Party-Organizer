@@ -1,43 +1,30 @@
 package github.com.leodipaula.PartyOrganizer.entity;
 
-import jakarta.annotation.Nonnull;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.Inheritance;
-import jakarta.persistence.InheritanceType;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
-import jakarta.persistence.SequenceGenerator;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.relational.core.mapping.Column;
+import org.springframework.data.relational.core.mapping.Table;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
-@Getter
-@Setter
-@ToString
-@Entity
-@Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
+@Table("tb_consumable_items")
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public abstract class ConsumableItem {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "consumable_item_seq")
-    @SequenceGenerator(name = "consumable_item_seq", sequenceName = "consumable_item_seq", allocationSize = 1)
-    private long id;
+    private Long id;
 
-    @Nonnull
     private String name;
-
-    @Nonnull
     private Double price;
+    private Integer quantity;
 
-    @Nonnull
-    @ManyToOne
-    @JoinColumn(name = "participant_id", nullable = true)
-    private Participant participant;
+    @Column("type")
+    private ConsumableType type;
 
-    @Nonnull
-    @ManyToOne
-    @JoinColumn(name = "participantWithoutWpp_id", nullable = true)
-    private ParticipantWithoutWpp participantWithoutWpp;
+    @Column("participant_id")
+    private Long participantId;
+
+    @Column("participant_without_wpp_id")
+    private Long participantWithoutWppId;
 }
