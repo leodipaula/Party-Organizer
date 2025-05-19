@@ -39,5 +39,5 @@ Até então, o nome seria "CapyParty", porque capivara é um animal muito querid
 ## 🤝 Contribuições
 
 Quer ajudar no desenvolvimento?  
-[Veja como contribuir](CONTRIBUTING.md)
+[Veja como contribuir](CONTRIBUITING.md)
 
