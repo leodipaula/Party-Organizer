@@ -7,7 +7,7 @@ Até então, o nome seria "CapyParty", porque capivara é um animal muito querid
 ### Ideia de como será a implementação:
 * A implementação não será simples. Como se utiliza do WhatsApp, e os participantes poderão participar de múltiplas festas, o número de requisições é esperado que seja alta. Lidar com isso não é simples, por isso, pode ser que tenhamos que utilizar o Kafkas.
 
-* Na comunicação com o WhatsApp, será utilizado WebSocket para comunicação em tempo real. Redis para cache e evitar sobrecarga no banco de dados. Possívelmente precisaremos do WebFlux para evitar chamadas bloqueantes. Além disso, o consumo da API da Meta será via Open Feign ou Interface HTTP.
+* Na comunicação com o WhatsApp, será utilizado WebSocket para comunicação em tempo real. Redis para cache e evitar sobrecarga no banco de dados. Precisaremos do WebFlux para evitar chamadas bloqueantes. Além disso, o consumo da API da Meta será via Interface HTTP.
 
 * O banco de dados será o PostgreSQL, pois possui funções que facilitam as querys.
 
@@ -35,4 +35,9 @@ Até então, o nome seria "CapyParty", porque capivara é um animal muito querid
 * Os eventos terão tipos, assim cada evento terá suas especificidades. Por exemplo, se o tema do evento for amigo secreto, ele ganha funcionalidades a mais como a de gerar o sorteio dos amigos.
 
 * O projeto estará sempre aberto a ter mais ou alterar funcionalidades.
+
+## 🤝 Contribuições
+
+Quer ajudar no desenvolvimento?  
+[Veja como contribuir](CONTRIBUTING.md)
 
