@@ -1,8 +1,8 @@
-package github.com.leodipaula.PartyOrganizer.repository;
+package github.com.leodipaula.partyorganizer.repository;
 
 import org.springframework.r2dbc.core.DatabaseClient;
 import org.springframework.stereotype.Repository;
-import github.com.leodipaula.PartyOrganizer.projections.ParticipantSortedProjection;
+import github.com.leodipaula.partyorganizer.projections.ParticipantSortedProjection;
 import lombok.RequiredArgsConstructor;
 import reactor.core.publisher.Mono;
 

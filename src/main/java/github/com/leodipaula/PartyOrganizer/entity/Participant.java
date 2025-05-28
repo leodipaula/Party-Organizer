@@ -1,4 +1,4 @@
-package github.com.leodipaula.PartyOrganizer.entity;
+package github.com.leodipaula.partyorganizer.entity;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.relational.core.mapping.Column;

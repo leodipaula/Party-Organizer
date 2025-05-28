@@ -1,4 +1,4 @@
-package github.com.leodipaula.PartyOrganizer.entity;
+package github.com.leodipaula.partyorganizer.entity;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;

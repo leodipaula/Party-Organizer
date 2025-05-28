@@ -1,12 +1,12 @@
-package github.com.leodipaula.PartyOrganizer.repository;
+package github.com.leodipaula.partyorganizer.repository;
 
 import org.springframework.data.r2dbc.repository.Query;
 import org.springframework.data.r2dbc.repository.R2dbcRepository;
 import org.springframework.stereotype.Repository;
-import github.com.leodipaula.PartyOrganizer.entity.Participant;
-import github.com.leodipaula.PartyOrganizer.projections.ConsumableItemProjection;
-import github.com.leodipaula.PartyOrganizer.projections.ParticipantProjection;
-import github.com.leodipaula.PartyOrganizer.projections.PartyProjection;
+import github.com.leodipaula.partyorganizer.entity.Participant;
+import github.com.leodipaula.partyorganizer.projections.ConsumableItemProjection;
+import github.com.leodipaula.partyorganizer.projections.ParticipantProjection;
+import github.com.leodipaula.partyorganizer.projections.PartyProjection;
 import reactor.core.publisher.Flux;
 
 @Repository

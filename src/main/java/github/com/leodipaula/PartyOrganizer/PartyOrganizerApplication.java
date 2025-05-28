@@ -1,4 +1,4 @@
-package github.com.leodipaula.PartyOrganizer;
+package github.com.leodipaula.partyorganizer;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
